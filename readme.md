@@ -31,6 +31,4 @@ HTML + BOOTSTRAP + Javascript
 
 ![screenshot](src/4.png)
 
-![screenshot](src/5.png)
-
 ![screenshot](src/6.png)
