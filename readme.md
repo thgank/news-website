@@ -23,7 +23,7 @@ HTML + BOOTSTRAP + Javascript
 
 Ниже вы можете посмотреть скриншоты веб-сайта
 
-![alt text](/news-website/blob/master/src/1.png)
+![alt text](https://github.com/news-website/blob/master/src/1.png)
 ![alt text](example.com/logo.png)
 ![alt text](example.com/logo.png)
 ![alt text](example.com/logo.png)
