@@ -4,12 +4,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>News Page</title>
+    <!--bootsrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 </head>
 <body>
 
+    <!--bootstrap grid-->
 <div class="container-fluid">
     <div class="row">
+        <!--filter part-->
         <div class="col-md-4">
             <div id="filters">
                 <h2>Filters</h2>
@@ -24,10 +27,11 @@
                 <button id="filter-button" class="btn btn-primary mt-3" onclick="applyFilters()">Search</button>
             </div>
         </div>
-
+        <!--news part-->
         <div class="col-md-8">
             <div id="news-list">
                 <h1>News</h1>
+                <!--some jinja-->
                 {% for news_item in news %}
                     <div class="news-item" data-title="{{ news_item.title }}" data-body="{{ news_item.body }}" data-created-date="{{ news_item.created_date }}">
                         <h2>{{ news_item.title }}</h2>
@@ -44,7 +48,7 @@
         </div>
     </div>
 </div>
-
+<!--javascript and bootstrap-->
 <script src="/static/script.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
