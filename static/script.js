@@ -34,7 +34,13 @@ function isDateInRange(date, startDate, endDate) {
     }
 
     startDate = new Date(startDate); // convert dates to object for comparison
-    endDate = new Date(endDate);
+
+    // If end date is not provided, set it to today's date
+    if (!endDate) {
+        endDate = new Date();
+    } else {
+        endDate = new Date(endDate);
+    }
 
     /* check if the date is greater than or equal to the start date 
     and less than or equal to the end date (if provided) */
