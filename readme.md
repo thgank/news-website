@@ -24,6 +24,8 @@ HTML + BOOTSTRAP + Javascript
 Ниже вы можете посмотреть скриншоты веб-сайта
 
 ![screenshot](src/1.png)
-![alt text](example.com/logo.png)
-![alt text](example.com/logo.png)
-![alt text](example.com/logo.png)
+![[screenshot](src/2.png)
+![[screenshot](src/3.png)
+![[screenshot](src/4.png)
+![[screenshot](src/5.png)
+![[screenshot](src/6.png)
