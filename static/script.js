@@ -1,7 +1,7 @@
 
 function applyFilters() {
     var titleSearchTerm = document.getElementById("search-title").value.toLowerCase();
-    var bodySearchTerm = document.getElementById("search-body").value.toLowerCase();
+    var bodySearchTerm = document.getElementById("search-body").value.toLowerCase(); // format to lower case for searching
     var startDate = document.getElementById("start-date").value;
     var endDate = document.getElementById("end-date").value;
 
@@ -10,12 +10,14 @@ function applyFilters() {
     for (var i = 0; i < newsItems.length; i++) {
         var newsItem = newsItems[i];
         var title = newsItem.getAttribute("data-title").toLowerCase();
-        var body = newsItem.getAttribute("data-body").toLowerCase();
+        var body = newsItem.getAttribute("data-body").toLowerCase(); // format json data for searching
         var createdDate = new Date(newsItem.getAttribute("data-created-date"));
 
         var matchesTitle = title.includes(titleSearchTerm);
         var matchesBody = body.includes(bodySearchTerm);
         var isInRange = isDateInRange(createdDate, startDate, endDate);
+
+        // compare elements
 
         if ((matchesTitle || titleSearchTerm === '') && (matchesBody || bodySearchTerm === '') && isInRange) {
             newsItem.style.display = "block";
